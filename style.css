@@ -1,36 +1,42 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
 body {
-    font-size: 17px;
-    font-family: "Montserrat", sans-serif !important;
-  }
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif !important;
+}
 
-  main {
-    padding: 5rem 0;
-  }
+main {
+  padding: 5rem 0;
+}
 
-#footer{
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    text-align: center;
-    background-color: black;
-    color: white;
+#footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .proklik {
-    text-align: center;
-    margin-right: 15px;
-    margin-bottom: 25px;
+  text-align: center;
+  margin-right: 15px;
+  margin-bottom: 25px;
 }
 
-.sekce{
-    box-sizing: border-box;
+.sekce {
+  box-sizing: border-box;
   width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
@@ -42,11 +48,32 @@ body {
   margin-top: 5rem;
 }
 
-.nadpis{
-    text-align: center;
-    
+.nadpis {
+  text-align: center;
+
 }
 
-.text{
-    margin-top: 3rem;
+.text {
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.galery .img {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.galery .img img {
+  transition: .2s ease-in-out;
+}
+
+.galery .img img:hover {
+  transform: scale(1.3);
 }
